@@ -23,11 +23,11 @@ const Doctors = ({ data }) => {
             <Doctor key={d.id} doctor={d} />
           ))}
         </div>
-        <div className="flex items-center justify-center mt-7">
+        <div className="flex items-center justify-center mt-10">
           {!showAll && (
             <button
               onClick={() => setShowAll(true)}
-              className="btn mt-5 bg-blue-500 text-white"
+              className="btn mt-5 bg-blue-500 text-white rounded-3xl p-5"
             >
               See All Doctors
             </button>
