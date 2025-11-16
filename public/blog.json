@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "5 Tips for Maintaining Heart Health",
+    "author": "Dr. John Doe",
+    "date": "2025-11-15",
+    "category": "Cardiology",
+    "content": "Learn simple lifestyle changes and exercises to keep your heart healthy.",
+    "image": "/images/doctor_blog1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Managing Diabetes: What You Need to Know",
+    "author": "Dr. Jane Smith",
+    "date": "2025-11-14",
+    "category": "Endocrinology",
+    "content": "Tips for monitoring blood sugar, diet, and medication management.",
+    "image": "/images/doctor_blog2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Understanding Hypertension and Its Risks",
+    "author": "Dr. Alice Johnson",
+    "date": "2025-11-13",
+    "category": "Cardiology",
+    "content": "Learn the causes, symptoms, and prevention strategies for high blood pressure.",
+    "image": "/images/doctor_blog3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "How to Strengthen Your Immune System",
+    "author": "Dr. Michael Brown",
+    "date": "2025-11-12",
+    "category": "Immunology",
+    "content": "Simple lifestyle and dietary tips to boost immunity naturally.",
+    "image": "/images/doctor_blog4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Mental Health: Coping with Stress",
+    "author": "Dr. Sophia Lee",
+    "date": "2025-11-11",
+    "category": "Psychology",
+    "content": "Techniques and habits to manage stress and improve mental well-being.",
+    "image": "/images/doctor_blog5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Pediatric Care: Common Childhood Illnesses",
+    "author": "Dr. Chris Wilson",
+    "date": "2025-11-10",
+    "category": "Pediatrics",
+    "content": "A guide for parents on common illnesses and preventive measures.",
+    "image": "/images/doctor_blog6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Healthy Eating for Busy Professionals",
+    "author": "Dr. Emma Davis",
+    "date": "2025-11-09",
+    "category": "Nutrition",
+    "content": "Easy meal planning tips for maintaining a balanced diet.",
+    "image": "/images/doctor_blog7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Understanding Common Allergies",
+    "author": "Dr. David Miller",
+    "date": "2025-11-08",
+    "category": "Allergy & Immunology",
+    "content": "Learn to recognize, prevent, and manage common allergies effectively.",
+    "image": "/images/doctor_blog8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Preventive Healthcare: Annual Checkups",
+    "author": "Dr. Olivia Martin",
+    "date": "2025-11-07",
+    "category": "General Medicine",
+    "content": "Importance of routine health checkups and early detection of diseases.",
+    "image": "/images/doctor_blog9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Tips for Better Sleep and Recovery",
+    "author": "Dr. Daniel Garcia",
+    "date": "2025-11-06",
+    "category": "Sleep Medicine",
+    "content": "Strategies to improve sleep quality for overall health and energy.",
+    "image": "/images/doctor_blog10.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Exercise Routines for Older Adults",
+    "author": "Dr. Linda Thompson",
+    "date": "2025-11-05",
+    "category": "Geriatrics",
+    "content": "Safe exercises to maintain mobility, balance, and strength in older age.",
+    "image": "/images/doctor_blog11.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Vaccinations: What Adults Should Know",
+    "author": "Dr. Mark Robinson",
+    "date": "2025-11-04",
+    "category": "Preventive Medicine",
+    "content": "A guide to recommended vaccines and staying protected from diseases.",
+    "image": "/images/doctor_blog12.jpg"
+  }
+]

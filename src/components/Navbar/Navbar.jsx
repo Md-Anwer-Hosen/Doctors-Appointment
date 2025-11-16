@@ -1,9 +1,14 @@
 import React from "react";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
+  const activeClass = "pb-1 border-b-2 border-blue-600 text-blue-600";
+  const normalClass =
+    "pb-1 border-b-2 border-transparent text-gray-600 hover:text-blue-600";
+
   return (
-    <div className="px-10">
-      <div className="navbar bg-base-100">
+    <div className="">
+      <div className="navbar bg-base-200">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -14,33 +19,62 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {" "}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
+                />
               </svg>
             </div>
+
+            {/* MOBILE MENU */}
             <ul
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Home</a>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? activeClass : normalClass
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
 
               <li>
-                <a>My-Bookings</a>
+                <NavLink
+                  to="/mybooking"
+                  className={({ isActive }) =>
+                    isActive ? activeClass : normalClass
+                  }
+                >
+                  My-Bookings
+                </NavLink>
               </li>
 
               <li>
-                <a>Blogs</a>
+                <NavLink
+                  to="/blog"
+                  className={({ isActive }) =>
+                    isActive ? activeClass : normalClass
+                  }
+                >
+                  Blogs
+                </NavLink>
               </li>
 
               <li>
-                <a>Contact Us</a>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive ? activeClass : normalClass
+                  }
+                >
+                  Contact Us
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -48,30 +82,60 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl ">
             <div className="flex items-center justify-between gap-2">
               <img className="h-7" src="/fi_16340199.png" alt="icon" />
-
               <h3>Phudu</h3>
             </div>
           </a>
         </div>
+
+        {/* DESKTOP MENU */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? activeClass : normalClass
+                }
+              >
+                Home
+              </NavLink>
             </li>
 
             <li>
-              <a>My-Bookings</a>
+              <NavLink
+                to="/mybooking"
+                className={({ isActive }) =>
+                  isActive ? activeClass : normalClass
+                }
+              >
+                My-Bookings
+              </NavLink>
             </li>
 
             <li>
-              <a>Blogs</a>
+              <NavLink
+                to="/blog"
+                className={({ isActive }) =>
+                  isActive ? activeClass : normalClass
+                }
+              >
+                Blogs
+              </NavLink>
             </li>
 
             <li>
-              <a>Contact Us</a>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? activeClass : normalClass
+                }
+              >
+                Contact Us
+              </NavLink>
             </li>
           </ul>
         </div>
+
         <div className="navbar-end">
           <a className="btn bg-[#176AE5] hover:bg-[#144ca7] rounded-4xl text-white">
             Emergency

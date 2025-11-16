@@ -4,7 +4,7 @@ import Doctor from "../../components/Doctor/Doctor";
 const Doctors = ({ data }) => {
   const [showAll, setShowAll] = useState(false);
   const dataToShow = showAll ? data : data.slice(0, 6);
-  console.log(dataToShow);
+
   return (
     <>
       <div className="mx-30">

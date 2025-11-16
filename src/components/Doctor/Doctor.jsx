@@ -1,7 +1,8 @@
 import React from "react";
+import { Link, NavLink } from "react-router";
 
 const Doctor = ({ doctor }) => {
-  const { name, degrees, experience, image, reg_no } = doctor;
+  const { id, name, degrees, experience, image, reg_no } = doctor;
   return (
     <div>
       <div className=" p-7 bg-white rounded-xl shadow-lg text-left mx-auto">
@@ -36,9 +37,11 @@ const Doctor = ({ doctor }) => {
           <span className="font-medium">Reg No: {reg_no}</span>
         </div>
 
-        <button className="w-full py-3 border border-[#176AE5] text-[#176AE5] font-semibold rounded-4xl bg-white transition duration-150 hover:bg-indigo-50">
-          View Details
-        </button>
+        <Link to={`/doctor/${id}`}>
+          <button className="w-full py-3 border border-[#176AE5] text-[#176AE5] font-semibold rounded-4xl bg-white transition duration-150 hover:bg-indigo-50">
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );
