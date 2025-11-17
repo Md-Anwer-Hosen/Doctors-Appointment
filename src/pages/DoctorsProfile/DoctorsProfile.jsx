@@ -69,8 +69,8 @@ const DoctorsProfile = () => {
 
           <p className="text-gray-600">{theDoctor.experience}</p>
 
-          <p className="pt-2 font-semibold">
-            <span className="font-semibold text-black">Working at </span>
+          <p className="pt-2 font-semibold text-black">
+            <span className="font-semibold text-black">Working at : </span>
             {theDoctor.hospital}
           </p>
 

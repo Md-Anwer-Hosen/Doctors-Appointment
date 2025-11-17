@@ -47,9 +47,11 @@ const MyBooking = () => {
                 <p className="text-gray-500 text-sm">{doc.hospital}</p>
               </div>
 
-              <div>
-                <p className="mt-13">
-                  <span className="font-semibold">Consultation Fee: </span>
+              <div className="hidden sm:flex">
+                <p className="">
+                  <span className="font-semibold text-black">
+                    Consultation Fee:{" "}
+                  </span>
                   <span className="text-blue-600 font-bold">
                     {doc.currency} {doc.consultation_fee}
                   </span>
