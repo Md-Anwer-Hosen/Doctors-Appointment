@@ -8,7 +8,7 @@ const ContactSection = () => {
   return (
     <div className="bg-base-200 py-16 px-5 ">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
-        <div className="bg-white">
+        <div className="bg-white shadow-xl rounded-2xl p-8">
           <h2 className="text-4xl font-bold mb-4 text-blue-600 ">Contact Us</h2>
           <p className=" mb-6 text-black">
             Have questions or need help? We're here for you! Send us a message
@@ -40,12 +40,12 @@ const ContactSection = () => {
 
           <form className="space-y-4">
             <div>
-              <label className="block mb-1 text-gray-600  font-medium">
+              <label className="block mb-1 text-gray-600 font-medium">
                 Your Name
               </label>
               <input
                 type="text"
-                className="w-full p-3 border border-black rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                className="w-full p-3 border border-black rounded-lg focus:outline-none focus:ring focus:ring-blue-300 text-black placeholder-black"
                 placeholder="Enter your name"
               />
             </div>
@@ -56,7 +56,7 @@ const ContactSection = () => {
               </label>
               <input
                 type="email"
-                className="w-full p-3 border border-black rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                className="w-full p-3 border border-black rounded-lg focus:outline-none focus:ring focus:ring-blue-300 text-black placeholder-black"
                 placeholder="Enter your email"
               />
             </div>
@@ -66,7 +66,7 @@ const ContactSection = () => {
                 Message
               </label>
               <textarea
-                className="w-full p-3 border border-black rounded-lg h-32 focus:outline-none focus:ring focus:ring-blue-300"
+                className="w-full p-3 border border-black rounded-lg h-32 focus:outline-none focus:ring focus:ring-blue-300 text-black placeholder-black"
                 placeholder="Write your message..."
               ></textarea>
             </div>
