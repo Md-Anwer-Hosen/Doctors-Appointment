@@ -27,7 +27,7 @@ const ContactSection = () => {
 
             <div className="flex items-center gap-3">
               <span className="text-blue-600 text-2xl">📧</span>
-              <p className="text-gray-700">nur.cnits@.com</p>
+              <p className="text-gray-700">nur.cnits@gmail.com</p>
             </div>
 
             <div className="flex items-center gap-3">
