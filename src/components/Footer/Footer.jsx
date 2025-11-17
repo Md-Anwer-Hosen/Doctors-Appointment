@@ -8,8 +8,8 @@ const Footer = () => {
 
   return (
     <div className="">
-      <footer className="footer footer-center p-8 text-lg flex flex-col">
-        <nav className="flex flex-wrap justify-center gap-6 text-lg ">
+      <footer className="footer footer-center p-8  flex flex-col gap-8">
+        <nav className="flex flex-wrap justify-center gap-8 text-sm ">
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? activeClass : normalClass)}
@@ -49,8 +49,8 @@ const Footer = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
+                width="25"
+                height="25"
                 viewBox="0 0 24 24"
                 className="fill-current"
               >
@@ -66,8 +66,8 @@ const Footer = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
+                width="25"
+                height="25"
                 viewBox="0 0 24 24"
                 className="fill-current"
               >
@@ -83,8 +83,8 @@ const Footer = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
+                width="25"
+                height="25"
                 viewBox="0 0 24 24"
                 className="fill-current"
               >
@@ -94,12 +94,12 @@ const Footer = () => {
           </div>
         </nav>
 
-        <aside>
-          <p className="text-gray-600">
+        <div>
+          <p className="text-gray-600 text-sm">
             © {new Date().getFullYear()} — All Rights Reserved | Phudu
             HealthCare
           </p>
-        </aside>
+        </div>
       </footer>
     </div>
   );

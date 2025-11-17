@@ -136,7 +136,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="navbar-end">
+        <div className="navbar-end hidden sm:flex">
           <a className="btn bg-[#176AE5] hover:bg-[#144ca7] rounded-4xl text-white">
             Emergency
           </a>

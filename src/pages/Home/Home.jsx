@@ -7,7 +7,7 @@ const Home = () => {
   const data = useLoaderData();
 
   return (
-    <div className="bg-base-200">
+    <div className="bg-base-200 w-full mx-auto">
       <Banner />
       <Doctors data={data} />
       <CountUpSection />

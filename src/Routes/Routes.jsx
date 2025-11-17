@@ -17,6 +17,7 @@ const router = createBrowserRouter([
         index: true,
         loader: () => fetch("/doc.json"),
         element: <Home />,
+        errorElement: <PageNotFound />,
       },
       {
         path: "/doctor/:id",

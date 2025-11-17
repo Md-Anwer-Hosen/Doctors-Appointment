@@ -35,7 +35,7 @@ const DoctorsProfile = () => {
   };
 
   return (
-    <div className="mx-auto space-y-10 bg-base-200 mt-10 mb-20">
+    <div className="mx-auto space-y-10 bg-base-200 mt-10 pb-20">
       {/* Doctor Profile Details Header */}
       <div className="bg-white p-8 rounded-2xl shadow text-center">
         <h2 className="text-2xl font-bold">Doctor’s Profile Details</h2>
@@ -47,12 +47,12 @@ const DoctorsProfile = () => {
       </div>
 
       {/* Profile Section */}
-      <div className="bg-white p-8 rounded-2xl shadow flex gap-10 items-start">
+      <div className="bg-white p-8 rounded-2xl shadow gap-10 grid grid-cols-1 sm:flex items-center justify-center">
         <div>
           <img
-            src="/Rectangle-20.png"
+            src={theDoctor.image}
             alt={theDoctor.name}
-            className="rounded-xl w-[330px] h-[380px]"
+            className="rounded-xl sm:w-[490px] sm:h-[380px]"
           />
         </div>
 

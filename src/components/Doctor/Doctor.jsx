@@ -5,7 +5,7 @@ const Doctor = ({ doctor }) => {
   const { id, name, degrees, experience, image, reg_no } = doctor;
   return (
     <div>
-      <div className=" p-7 bg-white rounded-xl shadow-lg text-left mx-auto">
+      <div className="p-3 md:p-7 bg-white rounded-xl shadow-lg text-left mx-auto">
         <div className="w-full aspect-[1.3/1] overflow-hidden rounded-lg mb-4">
           <img
             src={image}

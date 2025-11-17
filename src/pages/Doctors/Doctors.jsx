@@ -7,10 +7,10 @@ const Doctors = ({ data }) => {
 
   return (
     <>
-      <div className="mx-30">
-        <div className="text-center mt-14 px-10">
+      <div className="md:mx-10 lg:mx-15 xl:mx-20">
+        <div className="text-center mt-14 md:px-10">
           <h1 className="text-3xl font-bold">Our Best Doctors</h1>
-          <p className="mt-5 text-md">
+          <p className="mt-5  text-center sm:text-md">
             Our platform connects you with verified, experienced doctors across
             various specialties — all at your convenience. Whether it's a <br />{" "}
             routine checkup or urgent consultation, book appointments in minutes
@@ -18,7 +18,7 @@ const Doctors = ({ data }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-7 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 mt-20 ">
           {dataToShow.map((d) => (
             <Doctor key={d.id} doctor={d} />
           ))}
