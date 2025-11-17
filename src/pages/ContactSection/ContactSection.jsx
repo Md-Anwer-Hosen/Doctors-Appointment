@@ -8,7 +8,7 @@ const ContactSection = () => {
   return (
     <div className="bg-base-200 py-16 px-5 ">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
-        <div className="bg-base-200">
+        <div className="bg-white">
           <h2 className="text-4xl font-bold mb-4 text-blue-600 ">Contact Us</h2>
           <p className=" mb-6 text-black">
             Have questions or need help? We're here for you! Send us a message
