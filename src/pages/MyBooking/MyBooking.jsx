@@ -42,7 +42,7 @@ const MyBooking = () => {
           <div className="  bg-white p-4 rounded-xl shadow">
             <div key={doc.id} className="flex justify-between items-center ">
               <div>
-                <h3 className="text-lg font-semibold">{doc.name}</h3>
+                <h3 className="text-lg font-semibold text-black">{doc.name}</h3>
                 <p className="text-gray-600">{doc.specialization}</p>
                 <p className="text-gray-500 text-sm">{doc.hospital}</p>
               </div>

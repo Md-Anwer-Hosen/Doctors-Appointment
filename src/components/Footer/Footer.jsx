@@ -4,11 +4,11 @@ import { NavLink } from "react-router";
 const Footer = () => {
   const activeClass = "pb-1 border-b-2 border-blue-600 text-blue-600";
   const normalClass =
-    "pb-1 border-b-2 border-transparent text-gray-600 hover:text-blue-600";
+    "pb-1 border-b-2 border-transparent text-black  hover:text-blue-600";
 
   return (
     <div className="">
-      <footer className="footer footer-center p-8  flex flex-col gap-8">
+      <footer className="footer footer-center p-8  flex flex-col gap-8 bg-white">
         <nav className="flex flex-wrap justify-center gap-8 text-sm ">
           <NavLink
             to="/"
@@ -95,7 +95,7 @@ const Footer = () => {
         </nav>
 
         <div>
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-600 text-sm ">
             © {new Date().getFullYear()} — All Rights Reserved | Phudu
             HealthCare
           </p>

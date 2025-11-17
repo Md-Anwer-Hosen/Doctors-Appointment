@@ -35,21 +35,21 @@ const CountUpSection = () => {
         various specialties — all at your convenience.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 md:gap-5 items-center justify-items-center mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 md:gap-5 items-center justify-items-center mt-16 text-black">
         <div className="w-full  bg-white rounded-2xl px-10 py-5 text-left">
           <img src="fi_2854545.png" className="w-[60px]" alt="" />
           <div className="flex">
             {startCount && (
               <CountUp
-                className="text-5xl font-bold mt-5"
+                className="text-5xl font-bold mt-5 text-black"
                 start={0}
                 end={199}
                 duration={2.5}
               />
             )}
-            <p className="text-5xl mt-3 font-bold">+</p>
+            <p className=" text-black text-5xl mt-3 font-bold">+</p>
           </div>
-          <p className="text-mg text-base-400 mt-3">Total Doctors</p>
+          <p className="text-mg text-base-400 mt-3 text-black">Total Doctors</p>
         </div>
 
         {/* 2 */}
@@ -58,15 +58,15 @@ const CountUpSection = () => {
           <div className="flex">
             {startCount && (
               <CountUp
-                className="text-5xl font-bold mt-5"
+                className=" text-black text-5xl font-bold mt-5"
                 start={0}
                 end={467}
                 duration={2.5}
               />
             )}
-            <p className="text-5xl mt-3 font-bold">+</p>
+            <p className="text-5xl mt-3 font-bold text-black">+</p>
           </div>
-          <p className="text-mg text-base-400 mt-3">Total Reviews</p>
+          <p className="text-mg text-base-400 mt-3 text-black">Total Reviews</p>
         </div>
 
         {/* 3 */}
@@ -75,15 +75,15 @@ const CountUpSection = () => {
           <div className="flex">
             {startCount && (
               <CountUp
-                className="text-5xl font-bold mt-5"
+                className="text-5xl font-bold mt-5 text-black"
                 start={0}
                 end={1900}
                 duration={2.5}
               />
             )}
-            <p className="text-5xl mt-3 font-bold">+</p>
+            <p className="text-5xl mt-3 font-bold text-black">+</p>
           </div>
-          <p className="text-mg text-base-400 mt-3">Patients</p>
+          <p className="text-mg text-base-400 mt-3 text-black">Patients</p>
         </div>
 
         {/* 4 */}
@@ -92,15 +92,15 @@ const CountUpSection = () => {
           <div className="flex">
             {startCount && (
               <CountUp
-                className="text-5xl font-bold mt-5"
+                className="text-5xl font-bold mt-5 text-black"
                 start={0}
                 end={300}
                 duration={2.5}
               />
             )}
-            <p className="text-5xl mt-3 font-bold">+</p>
+            <p className="text-5xl mt-3 font-bold text-black">+</p>
           </div>
-          <p className="text-mg text-base-400 mt-3">Total Staff</p>
+          <p className="text-mg text-base-400 mt-3 text-black">Total Staff</p>
         </div>
       </div>
     </div>

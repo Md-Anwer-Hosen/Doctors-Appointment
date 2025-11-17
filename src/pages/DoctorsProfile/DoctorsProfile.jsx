@@ -38,8 +38,10 @@ const DoctorsProfile = () => {
     <div className="mx-auto space-y-10 bg-base-200 mt-10 pb-20">
       {/* Doctor Profile Details Header */}
       <div className="bg-white p-8 rounded-2xl shadow text-center">
-        <h2 className="text-2xl font-bold">Doctor’s Profile Details</h2>
-        <p className="text-gray-600 mt-3">
+        <h2 className="text-2xl font-bold text-black">
+          Doctor’s Profile Details
+        </h2>
+        <p className="text-gray-600 mt-3 ">
           Lorem ipsum dolor sit amet consectetur. Sit enim blandit orci tortor
           amet ut. Suscipit sed est fermentum magna. Quis vitae tempus facilisis
           turpis imperdiet mattis donec dignissim volutpat.
@@ -57,7 +59,7 @@ const DoctorsProfile = () => {
         </div>
 
         <div className="w-2/3 space-y-3">
-          <h2 className="text-2xl font-bold">{theDoctor.name}</h2>
+          <h2 className="text-2xl font-bold text-black">{theDoctor.name}</h2>
 
           <p className="text-gray-700 font-medium">
             {theDoctor.degrees.join(", ")}
@@ -68,7 +70,7 @@ const DoctorsProfile = () => {
           <p className="text-gray-600">{theDoctor.experience}</p>
 
           <p className="pt-2 font-semibold">
-            <span className="font-semibold">Working at </span>
+            <span className="font-semibold text-black">Working at </span>
             {theDoctor.hospital}
           </p>
 
@@ -76,12 +78,12 @@ const DoctorsProfile = () => {
           <p className="text-gray-600">Reg No: {theDoctor.reg_no}</p>
           <hr className="border-t border-dashed border-gray-300 mb-4" />
 
-          <p className="font-semibold mt-3">Availability</p>
+          <p className="font-semibold mt-3 text-black">Availability</p>
           <div className="flex gap-2">
             {theDoctor.availability.map((day, i) => (
               <span
                 key={i}
-                className="px-3 py-1 bg-yellow-100 rounded-full text-sm"
+                className="px-3 py-1 bg-yellow-100 rounded-full text-sm text-black"
               >
                 {day}
               </span>
@@ -89,7 +91,7 @@ const DoctorsProfile = () => {
           </div>
 
           <p className="mt-4">
-            <span className="font-semibold">Consultation Fee: </span>
+            <span className="font-semibold text-black">Consultation Fee: </span>
             <span className="text-blue-600 font-bold">
               {theDoctor.currency} {theDoctor.consultation_fee}
             </span>
@@ -109,8 +111,8 @@ const DoctorsProfile = () => {
           </h3>
         </div>
 
-        <div className="flex justify-between mb-3">
-          <p className="font-semibold mb-2">Availability</p>
+        <div className="flex justify-between mb-3 text-black">
+          <p className="font-semibold mb-2 ">Availability</p>
           <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">
             Doctor Available Today
           </span>
