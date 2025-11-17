@@ -2,15 +2,19 @@ import React from "react";
 import toast from "react-hot-toast";
 
 const ContactSection = () => {
-  const handleclick = () => {
+  // handle form submission
+  const handleclick = (e) => {
+    e.preventDefault();
     toast.success("Email is sent Successfully !");
   };
+
   return (
-    <div className="bg-base-200 py-16 px-5 ">
+    <div className="bg-base-200 py-16 px-5">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+        {/* Contact Info */}
         <div className="bg-white shadow-xl rounded-2xl p-8">
-          <h2 className="text-4xl font-bold mb-4 text-blue-600 ">Contact Us</h2>
-          <p className=" mb-6 text-black">
+          <h2 className="text-4xl font-bold mb-4 text-blue-600">Contact Us</h2>
+          <p className="mb-6 text-black">
             Have questions or need help? We're here for you! Send us a message
             anytime — our support team will get back to you as soon as possible.
           </p>
@@ -33,12 +37,13 @@ const ContactSection = () => {
           </div>
         </div>
 
+        {/* Contact Form */}
         <div className="bg-white shadow-xl rounded-2xl p-8 mt-5 sm:mt-0">
           <h3 className="text-2xl font-semibold mb-5 text-gray-800">
             Send us a Message
           </h3>
 
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleclick}>
             <div>
               <label className="block mb-1 text-gray-600 font-medium">
                 Your Name
@@ -72,9 +77,9 @@ const ContactSection = () => {
             </div>
 
             <button
+              onClick={handleclick}
               type="submit"
               className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
-              onClick={handleclick}
             >
               Send Message
             </button>
